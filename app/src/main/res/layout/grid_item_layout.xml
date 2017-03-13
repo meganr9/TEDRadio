@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/gridLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+            android:id="@+id/imageView4"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            android:paddingBottom="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="175dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grid_title_textView"
+                android:layout_below="@+id/grid_imageView"
+                android:padding="5dp"
+                android:layout_alignLeft="@+id/grid_imageView"
+                android:layout_alignStart="@+id/grid_imageView"
+                android:layout_alignRight="@+id/grid_imageView"
+                android:layout_alignEnd="@+id/grid_imageView" />
+
+            <ImageView
+                app:srcCompat="@android:drawable/gallery_thumb"
+                android:id="@+id/grid_imageView"
+                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_play"
+                android:id="@+id/play_gridbutton"
+                android:layout_above="@+id/grid_title_textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="31dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
